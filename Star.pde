@@ -1,12 +1,12 @@
 class Star{
-private int myX, myY;
+private int myX, myY,myColor;
 
 public Star(){
-myX=(int)(Math.random()*250);
-myY=(int)(Math.random()*250);
-
+myX=(int)(Math.random()*500);
+myY=(int)(Math.random()*500);
+myColor=(int)(Math.random()*255);
 public void show(){
-fill(255);
+fill(myColor,20,myColor);
 ellipse(myX,myY,3,3);
 }
 
