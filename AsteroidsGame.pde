@@ -21,9 +21,10 @@ public void setup()
 public void draw() 
 {
  background(0);
- One.show(); 
   for(int i=0;i<lights.length;i++){
  lights[i].show();
+One.show(); 
+One.move();
  }
  }
 
