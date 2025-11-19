@@ -2,7 +2,7 @@ Star[] lights=new Star[200];
 Spaceship One=new Spaceship();
 
 public void keyPressed(){
-if(key=='p'){
+if(key=='s'){
 One.setXspeed(0);
 }
 
@@ -12,16 +12,14 @@ One.turn(-10);
 
 if(key=='d'){
 One.turn(10);
+}
 
 if(key=='w'){
-One.accelerate(1);
+One.accelerate(0.001);
 }
 
-if(key=='s'){
-One.accelerate(-1);
 }
-}
-}
+
 
 
 //your variable declarations here
