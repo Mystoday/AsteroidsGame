@@ -2,10 +2,25 @@ Star[] lights=new Star[200];
 Spaceship One=new Spaceship();
 
 public void keyPressed(){
-if(key=='s'){
+if(key=='p'){
 One.setXspeed(0);
 }
 
+if(key=='a'){
+One.turn(-10);
+}
+
+if(key=='d'){
+One.turn(10);
+
+if(key=='w'){
+One.accelerate(1);
+}
+
+if(key=='s'){
+One.accelerate(-1);
+}
+}
 }
 
 
@@ -27,4 +42,3 @@ One.show();
 One.move();
  }
  }
-
